@@ -1,0 +1,34 @@
+Student SungS = new Student("Sam Sung", "223442");
+LabClass co452lab = new LabClass(3);
+LabClass co452lab = new LabClass(3);
+co452lab.setRoom("G100");
+co452lab.setInstructor("Nick Day");
+co452lab.setTime("Tuesday, 10:30am");
+LabClass co452lab = new LabClass(3);
+LabClass co452lab = new LabClass(3);
+Student SungS = new Student("Sam Sung", "223442");
+Student SuparmanB = new Student("Batman Suparman", "141412");
+Student RegisterK = new Student("Kash Register", "120160");
+co452lab.numberOfStudents()
+    returned int 0
+co452lab.setInstructor("Nick Day");
+co452lab.setRoom("G100");
+co452lab.setTime("Tuesday, 10:30am");
+co452lab.enrollStudent(SungS);
+co452lab.enrollStudent(SuparmanB);
+co452lab.enrollStudent(RegisterK);
+SungS.getCredits()
+    returned int 0
+SungS.getName()
+    returned String "Sam Sung"
+SungS.getLoginName()
+    returned String "Sam 223"
+SungS.print();
+Sam Sung, student ID: 223442, credits: 0
+SuparmanB.print();
+Batman Suparman, student ID: 141412, credits: 0
+RegisterK.print();
+Kash Register, student ID: 120160, credits: 0
+SungS.enrolOnCourse();
+SuparmanB.enrolOnCourse();
+RegisterK.enrolOnCourse();
