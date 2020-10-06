@@ -1,0 +1,30 @@
+LabClass labClass1 = new LabClass(3);
+labClass1.numberOfStudents()
+    returned int 0
+labClass1.setInstructor("Nick Day");
+labClass1.setRoom("G301");
+labClass1.setTime("Tuesday, 10:30am");
+Student kujoJ = new Student("Jotaro Kujo", "123456");
+Student avdolM = new Student("Mohammed Avdol", "654321");
+Student joestarJ = new Student("Joseph Joestar", "098765");
+kujoJ.addCredits(20);
+avdolM.addCredits(20);
+joestarJ.addCredits(20);
+kujoJ.getCredits()
+    returned int 20
+avdolM.getCredits()
+    returned int 20
+joestarJ.getCredits()
+    returned int 20
+kujoJ.getLoginName()
+    returned String "Jota123"
+avdolM.getLoginName()
+    returned String "Moha654"
+joestarJ.getLoginName()
+    returned String "Jose098"
+kujoJ.print();
+Jotaro Kujo, student ID: 123456, credits: 20
+avdolM.print();
+Mohammed Avdol, student ID: 654321, credits: 20
+joestarJ.print();
+Joseph Joestar, student ID: 098765, credits: 20
