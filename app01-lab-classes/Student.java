@@ -6,7 +6,8 @@ import java.util.*;
  * 
  * @author Michael Kölling and David Barnes
  * @version 2016.02.29
- */
+ * modified by Mohammed Ahmed - 21915819
+ */ 
 public class Student
 {
     // the student's full name
@@ -55,7 +56,7 @@ public class Student
      */
     public void addCredits(int additionalPoints)
     {
-        credits += additionalPoints;
+        credits += 20;
     }
 
     
@@ -64,7 +65,7 @@ public class Student
      */
     public int getCredits()
     {
-        return credits;
+        return credits; 
     }
 
     /**
