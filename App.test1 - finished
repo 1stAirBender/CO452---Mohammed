@@ -1,0 +1,19 @@
+LabClass labClass1 = new LabClass(3);
+Student kujoJ = new Student("Jotaro Kujo", "123456");
+Student avdolM = new Student("Mohammed Avdol", "098765");
+Student joestarJ = new Student("Joseph Joestar", "567890");
+kujoJ.getCredits()
+    returned int 0
+kujoJ.addCredits(20);
+avdolM.addCredits(20);
+joestarJ.addCredits(20);
+labClass1.setInstructor("Nick Day");
+labClass1.setRoom("G400");
+labClass1.setTime("Tuesday, 10:30");
+Course course1 = new Course("G400", "Computing");
+Student student1 = new Student("Jotaro Kujo", "123456");
+Course computing = new Course("G400", "Computing");
+student1.addCourse(computing);
+student1.print();
+Jotaro Kujo, student ID: 123456, credits: 0
+Code number is: G400 and course tile: Computing
