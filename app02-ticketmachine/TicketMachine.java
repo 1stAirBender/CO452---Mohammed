@@ -9,23 +9,28 @@
  * @author David J. Barnes and Michael Kölling
  * @version 2016.02.29
  * 
- * Modified by Student Name
+ * Modified by Mohammed Ahmed - 21915819
  */
-public class TicketMachine
+import java.util.Date;
+import java.text.SimpleDateFormat;
+
+public class TicketMachine extends Ticket
 {
-    // The price of a ticket from this machine.
-    private int price;
+    
     // The amount of money entered by a customer so far.
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
+    
+    
 
     /**
      * Create a machine that issues tickets of the given price.
      */
-    public TicketMachine(int cost)
+    public TicketMachine()
+    
     {
-        price = cost;
+        
         balance = 0;
         total = 0;
     }
@@ -33,8 +38,12 @@ public class TicketMachine
     /**
      * @Return The price of a ticket.
      */
-    public int getPrice()
+    public int getPrice(Destination dest)
     {
+        int price = 0;
+        if (dest == Destination.AYLESBURY)price = 220;
+        if (dest == Destination.AMERSHAM)price = 300;
+        if (dest == Destination.HIGHWYCOMBE)price = 330;
         return price;
     }
 
@@ -51,17 +60,16 @@ public class TicketMachine
      * Receive an amount of money from a customer.
      * Check that the amount is sensible.
      */
-    public void insertMoney(int amount)
+    public void insertCoin(Coin c)
     {
-        if(amount > 0) 
-        {
-            balance = balance + amount;
-        }
-        else 
-        {
-            System.out.println("Use a positive amount rather than: " +
-                               amount);
-        }
+        
+        
+            balance = balance + c.getValue();
+            System.out.println("# " + balance + " pence.");
+        
+         
+       
+        
     }
 
     /**
@@ -69,17 +77,21 @@ public class TicketMachine
      * reduce the current balance by the ticket price. Print
      * an error message if more money is required.
      */
-    public void printTicket()
+    public void printTicket(Destination dest)
     {
+        int price = getPrice(dest);
+        Date today = new Date();
         if(balance >= price) 
         {
             // Simulate the printing of a ticket.
             System.out.println("##################");
             System.out.println("# The BlueJ Line");
-            System.out.println("# Ticket");
-            System.out.println("# " + price + " cents.");
+            System.out.println("# Ticket to "+ dest);
+            System.out.println("# " + price + " pence.");
+            System.out.println("# on "+ today);
             System.out.println("##################");
             System.out.println();
+            
 
             // Update the total collected with the price.
             total = total + price;
