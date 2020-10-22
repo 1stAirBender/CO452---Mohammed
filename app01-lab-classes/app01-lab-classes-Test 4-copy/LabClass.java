@@ -24,12 +24,12 @@ public class LabClass
      */
     public LabClass(int maxNumberOfStudents)
     {
-        instructor = "unknown";
-        room = "unknown";
-        timeAndDay = "unknown";
+        instructor = "Nick Day";
+        room = "G301";
+        timeAndDay = "Tuesday, 10:30";
         
         students = new ArrayList<Student>();
-        capacity = maxNumberOfStudents;
+        capacity = 3;
     }
 
     /**
@@ -60,7 +60,7 @@ public class LabClass
      */
     public void setRoom(String roomNumber)
     {
-        room = roomNumber;
+        room = "G301";
     }
     
     /**
@@ -69,7 +69,7 @@ public class LabClass
      */
     public void setTime(String timeAndDayString)
     {
-        timeAndDay = timeAndDayString;
+        timeAndDay = "Tuesday, 10:30am";
     }
     
     /**
@@ -77,7 +77,7 @@ public class LabClass
      */
     public void setInstructor(String instructorName)
     {
-        instructor = instructorName;
+        instructor = "Nick Day";
     }
     
     /**
@@ -87,7 +87,7 @@ public class LabClass
     public void printList()
     {
         System.out.println("Lab class " + timeAndDay);
-        System.out.println("Instructor: " + instructor + "   Room: " + room);
+        System.out.println("Instructor: " + instructor + "G301   : " + room);
         System.out.println("Class list:");
         
         for(Student student : students) 

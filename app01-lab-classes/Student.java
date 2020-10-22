@@ -17,6 +17,8 @@ public class Student
     // the amount of credits for study taken so far
     private int credits;
     
+    private Course course;
+    
     /**
      * Create a new student with a given name and ID number.
      */
@@ -36,11 +38,11 @@ public class Student
     }
 
     /**
-     * Set a new name for this student.
+     * Assign parameter course to field course
      */
-    public void changeName(String replacementName)
+    public void addCourse(Course course)
     {
-        name = replacementName;
+        this.course = course;
     }
 
     /**
@@ -73,10 +75,7 @@ public class Student
      * of the first four characters of the student's name and the first three
      * characters of the student's ID number.
      */
-    public String getLoginName()
-    {
-        return name.substring(0,4) + id.substring(0,3);
-    }
+    
     
     /**
      * Print the student's name and ID number to the output terminal.
@@ -84,5 +83,6 @@ public class Student
     public void print()
     {
         System.out.println(name + ", student ID: " + id + ", credits: " + credits);
+        course.print();
     }
 }

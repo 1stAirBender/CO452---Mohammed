@@ -3,7 +3,7 @@
  * Write a description of class Course here.
  *
  * @author (Mohammed Ahmed)
- * @version (6/10/2020)
+ * @version (7/10/2020)
  */
 public class Course
 {
