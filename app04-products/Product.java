@@ -3,6 +3,8 @@
  * 
  * @author David J. Barnes and Michael Kölling.
  * @version 2016.02.29
+ * Modified by Mohammed Ahmed
+ * Date: 30/10/2020
  */
 public class Product
 {
@@ -25,6 +27,11 @@ public class Product
         this.name = name;
         quantity = 0;
     }
+    public void rename(String newName)
+    {
+        this.name=newName;
+    }
+    
 
     /**
      * @return The product's id.

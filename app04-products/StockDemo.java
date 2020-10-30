@@ -5,6 +5,8 @@
  * 
  * @author David J. Barnes and Michael Kölling.
  * @version 2016.02.29
+ * Modified by Mohammed Ahmed
+ * Date: 30/10/2020
  */
 public class StockDemo
 {
@@ -18,9 +20,16 @@ public class StockDemo
     public StockDemo()
     {
         manager = new StockManager();
-        manager.addProduct(new Product(132, "Clock Radio"));
-        manager.addProduct(new Product(37,  "Mobile Phone"));
-        manager.addProduct(new Product(23,  "Microwave Oven"));
+        manager.addProduct(new Product(132, "Macbook Pro"));
+        manager.addProduct(new Product(37,  "iPhone 12"));
+        manager.addProduct(new Product(23,  "PS5"));
+        manager.addProduct(new Product(1,   "Chrome Book"));
+        manager.addProduct(new Product(64,  "Google Pixel 5"));
+        manager.addProduct(new Product(21,  "Apple Watch"));
+        manager.addProduct(new Product(6,   "iPad"));
+        manager.addProduct(new Product(9,   "Samsung Galaxy"));
+        manager.addProduct(new Product(99,  "iMac"));
+        manager.addProduct(new Product(11,  "Headset"));
     }
     
     /**
@@ -31,9 +40,16 @@ public class StockDemo
     public void demo()
     {
         // Show details of all of the products.
+        System.out.println("Intial stock");
         manager.printProductDetails();
         // Take delivery of 5 items of one of the products.
         manager.delivery(132, 5);
+        manager.delivery(1, 6);
+        manager.delivery(11, 50);
+        manager.delivery(6, 11);
+        manager.delivery(23, 1400000);
+        System.out.println("");
+        System.out.println("After deliveries");
         manager.printProductDetails();
     }
     
@@ -94,4 +110,48 @@ public class StockDemo
     {
         return manager;
     }
+    
+    public void printProduct(){
+        manager.printProductDetails();
+    }
+    public void demo2(){
+        System.out.println("Intial stock");
+        manager.printProductDetails();
+        manager.sellProduct(23);
+        System.out.println("");
+        System.out.println("After selling PS5");
+        manager.printProductDetails();
+        
+    }
+    public void demo3(){
+        System.out.println("Intial stock");
+        manager.printProductDetails();
+        manager.renameProduct(37, "iPhone 12 Pro");
+        System.out.println("");
+        System.out.println("After changing iPhone 12 name");
+        manager.printProductDetails();
+    }
+    public void demo4(){
+        System.out.println("Intial stock");
+        manager.printProductDetails();
+        manager.removeProduct(37);
+        System.out.println("");
+        System.out.println("After removing iPhone 12");
+        manager.printProductDetails();
+    }
+    public void demo5(){
+        System.out.println("Intial stock");
+        manager.printProductDetails();
+        Product p = manager.findProduct("Apple");
+        System.out.println("");
+        System.out.println("Found");
+        System.out.println(p.toString() ); 
+    }
+   
+   
+  
+    
+    
+        
+    
 }

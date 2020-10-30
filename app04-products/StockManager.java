@@ -4,8 +4,8 @@ import java.util.ArrayList;
  * Manage the stock in a business.
  * The stock is described by zero or more Products.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Mohammed Ahmed) 
+ * @version (30/10/2020)
  */
 public class StockManager
 {
@@ -28,6 +28,52 @@ public class StockManager
     {
         stock.add(item);
     }
+    public void renameProduct(int id,String newName)
+    {
+        for(Product p:stock) {
+            if(p.getID()==id)
+            {
+                p.rename(newName);
+                break;
+            }
+        
+        }
+    }
+    public void sellProduct(int id)
+    {
+        for(Product p:stock) {
+            if(p.getID()==id)
+            {
+                p.sellOne();
+                break;
+            }
+        
+        }
+    }
+    public void removeProduct(int id)
+    {
+        for(Product p:stock) {
+            if(p.getID()==id)
+            {
+                stock.remove(p);
+                break;
+            }
+        
+        }
+    }
+    public Product findProduct(String name)
+    {
+        for(Product p:stock) {
+            if(p.getName().contains(name))
+            {
+                
+                return p;
+            }
+        
+        }
+        return null;
+    }
+        
     
     /**
      * Receive a delivery of a particular product.
@@ -37,6 +83,14 @@ public class StockManager
      */
     public void delivery(int id, int amount)
     {
+        for(Product p:stock) {
+            if(p.getID()==id)
+            {
+                p.increaseQuantity(amount);
+                break;
+            }
+        
+        }
     }
     
     /**
@@ -46,6 +100,13 @@ public class StockManager
      */
     public Product findProduct(int id)
     {
+        for(Product p:stock) {
+            if(p.getID()==id)
+            {
+                return p;
+            }
+        
+        }
         return null;
     }
     
@@ -58,6 +119,13 @@ public class StockManager
      */
     public int numberInStock(int id)
     {
+        for(Product p:stock) {
+            if(p.getID()==id)
+            {
+                return p.getQuantity();
+            }
+        
+        }
         return 0;
     }
 
@@ -66,5 +134,9 @@ public class StockManager
      */
     public void printProductDetails()
     {
+       for(Product p:stock) {
+           System.out.println(p.toString() ); 
+        
+        } 
     }
 }
