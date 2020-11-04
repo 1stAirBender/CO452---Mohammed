@@ -1,0 +1,199 @@
+11: Headset stock level: 50
+
+After deliveries
+132: Macbook Pro stock level: 10
+37: iPhone 12 stock level: 0
+23: PS5 stock level: 2800000
+1: Chrome Book stock level: 12
+64: Google Pixel 5 stock level: 0
+21: Apple Watch stock level: 0
+6: iPad stock level: 22
+9: Samsung Galaxy stock level: 0
+99: iMac stock level: 0
+11: Headset stock level: 100
+StockDemo Stock = new StockDemo();
+Stock.demo();
+Intial stock
+132: Macbook Pro stock level: 0
+37: iPhone 12 stock level: 0
+23: PS5 stock level: 0
+1: Chrome Book stock level: 0
+64: Google Pixel 5 stock level: 0
+21: Apple Watch stock level: 0
+6: iPad stock level: 0
+9: Samsung Galaxy stock level: 0
+99: iMac stock level: 0
+11: Headset stock level: 0
+
+After deliveries
+132: Macbook Pro stock level: 5
+37: iPhone 12 stock level: 0
+23: PS5 stock level: 1400000
+1: Chrome Book stock level: 6
+64: Google Pixel 5 stock level: 0
+21: Apple Watch stock level: 0
+6: iPad stock level: 11
+9: Samsung Galaxy stock level: 0
+99: iMac stock level: 0
+11: Headset stock level: 50
+Stock.demo2();
+Intial stock
+132: Macbook Pro stock level: 5
+37: iPhone 12 stock level: 0
+23: PS5 stock level: 1400000
+1: Chrome Book stock level: 6
+64: Google Pixel 5 stock level: 0
+21: Apple Watch stock level: 0
+6: iPad stock level: 11
+9: Samsung Galaxy stock level: 0
+99: iMac stock level: 0
+11: Headset stock level: 50
+
+After selling PS5
+132: Macbook Pro stock level: 5
+37: iPhone 12 stock level: 0
+23: PS5 stock level: 1399999
+1: Chrome Book stock level: 6
+64: Google Pixel 5 stock level: 0
+21: Apple Watch stock level: 0
+6: iPad stock level: 11
+9: Samsung Galaxy stock level: 0
+99: iMac stock level: 0
+11: Headset stock level: 50
+StockDemo Stock = new StockDemo();
+Stock.demo();
+Intial stock
+132: Macbook Pro stock level: 0
+37: iPhone 12 stock level: 0
+23: PS5 stock level: 0
+1: Chrome Book stock level: 0
+64: Google Pixel 5 stock level: 0
+21: Apple Watch stock level: 0
+6: iPad stock level: 0
+9: Samsung Galaxy stock level: 0
+99: iMac stock level: 0
+11: Headset stock level: 0
+
+After deliveries
+132: Macbook Pro stock level: 5
+37: iPhone 12 stock level: 0
+23: PS5 stock level: 1400000
+1: Chrome Book stock level: 6
+64: Google Pixel 5 stock level: 0
+21: Apple Watch stock level: 0
+6: iPad stock level: 11
+9: Samsung Galaxy stock level: 0
+99: iMac stock level: 0
+11: Headset stock level: 50
+Stock.demo3();
+Intial stock
+132: Macbook Pro stock level: 5
+37: iPhone 12 stock level: 0
+23: PS5 stock level: 1400000
+1: Chrome Book stock level: 6
+64: Google Pixel 5 stock level: 0
+21: Apple Watch stock level: 0
+6: iPad stock level: 11
+9: Samsung Galaxy stock level: 0
+99: iMac stock level: 0
+11: Headset stock level: 50
+
+After changing iPhone 12 name
+132: Macbook Pro stock level: 5
+37: iPhone 12 Pro stock level: 0
+23: PS5 stock level: 1400000
+1: Chrome Book stock level: 6
+64: Google Pixel 5 stock level: 0
+21: Apple Watch stock level: 0
+6: iPad stock level: 11
+9: Samsung Galaxy stock level: 0
+99: iMac stock level: 0
+11: Headset stock level: 50
+StockDemo Stock = new StockDemo();
+Stock.demo();
+Intial stock
+132: Macbook Pro stock level: 0
+37: iPhone 12 stock level: 0
+23: PS5 stock level: 0
+1: Chrome Book stock level: 0
+64: Google Pixel 5 stock level: 0
+21: Apple Watch stock level: 0
+6: iPad stock level: 0
+9: Samsung Galaxy stock level: 0
+99: iMac stock level: 0
+11: Headset stock level: 0
+
+After deliveries
+132: Macbook Pro stock level: 5
+37: iPhone 12 stock level: 0
+23: PS5 stock level: 1400000
+1: Chrome Book stock level: 6
+64: Google Pixel 5 stock level: 0
+21: Apple Watch stock level: 0
+6: iPad stock level: 11
+9: Samsung Galaxy stock level: 0
+99: iMac stock level: 0
+11: Headset stock level: 50
+Stock.demo4();
+Intial stock
+132: Macbook Pro stock level: 5
+37: iPhone 12 stock level: 0
+23: PS5 stock level: 1400000
+1: Chrome Book stock level: 6
+64: Google Pixel 5 stock level: 0
+21: Apple Watch stock level: 0
+6: iPad stock level: 11
+9: Samsung Galaxy stock level: 0
+99: iMac stock level: 0
+11: Headset stock level: 50
+
+After removing iPhone 12
+132: Macbook Pro stock level: 5
+23: PS5 stock level: 1400000
+1: Chrome Book stock level: 6
+64: Google Pixel 5 stock level: 0
+21: Apple Watch stock level: 0
+6: iPad stock level: 11
+9: Samsung Galaxy stock level: 0
+99: iMac stock level: 0
+11: Headset stock level: 50
+StockDemo Stock = new StockDemo();
+Stock.demo();
+Intial stock
+132: Macbook Pro stock level: 0
+37: iPhone 12 stock level: 0
+23: PS5 stock level: 0
+1: Chrome Book stock level: 0
+64: Google Pixel 5 stock level: 0
+21: Apple Watch stock level: 0
+6: iPad stock level: 0
+9: Samsung Galaxy stock level: 0
+99: iMac stock level: 0
+11: Headset stock level: 0
+
+After deliveries
+132: Macbook Pro stock level: 5
+37: iPhone 12 stock level: 0
+23: PS5 stock level: 1400000
+1: Chrome Book stock level: 6
+64: Google Pixel 5 stock level: 0
+21: Apple Watch stock level: 0
+6: iPad stock level: 11
+9: Samsung Galaxy stock level: 0
+99: iMac stock level: 0
+11: Headset stock level: 50
+Stock.demo5();
+Intial stock
+132: Macbook Pro stock level: 5
+37: iPhone 12 stock level: 0
+23: PS5 stock level: 1400000
+1: Chrome Book stock level: 6
+64: Google Pixel 5 stock level: 0
+21: Apple Watch stock level: 0
+6: iPad stock level: 11
+9: Samsung Galaxy stock level: 0
+99: iMac stock level: 0
+11: Headset stock level: 50
+
+Found
+21: Apple Watch stock level: 0
