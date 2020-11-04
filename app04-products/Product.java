@@ -30,9 +30,7 @@ public class Product
     public void rename(String newName)
     {
         this.name=newName;
-    }
-    
-
+    }   
     /**
      * @return The product's id.
      */
@@ -40,7 +38,6 @@ public class Product
     {
         return id;
     }
-
     /**
      * @return The product's name.
      */
@@ -48,7 +45,6 @@ public class Product
     {
         return name;
     }
-
     /**
      * @return The quantity in stock.
      */
@@ -56,7 +52,6 @@ public class Product
     {
         return quantity;
     }
-
     /**
      * @return The id, name and quantity in stock.
      */
@@ -64,7 +59,6 @@ public class Product
     {
         return id + ": " +  name + " stock level: " + quantity;
     }
-
     /**
      * Restock with the given amount of this product.
      * The current quantity is incremented by the given amount.
@@ -83,7 +77,6 @@ public class Product
                                " with a non-positive amount: " + amount);
         }
     }
-
     /**
      * Sell one of these products.
      * An error is reported if there appears to be no stock.

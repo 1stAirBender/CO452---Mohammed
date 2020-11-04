@@ -73,8 +73,6 @@ public class StockManager
         }
         return null;
     }
-        
-    
     /**
      * Receive a delivery of a particular product.
      * Increase the quantity of the product by the given amount.
@@ -92,7 +90,6 @@ public class StockManager
         
         }
     }
-    
     /**
      * Try to find a product in the stock with the given id.
      * @return The identified product, or null if there is none
@@ -109,7 +106,6 @@ public class StockManager
         }
         return null;
     }
-    
     /**
      * Locate a product with the given ID, and return how
      * many of this item are in stock. If the ID does not
@@ -128,7 +124,6 @@ public class StockManager
         }
         return 0;
     }
-
     /**
      * Print details of all the products.
      */

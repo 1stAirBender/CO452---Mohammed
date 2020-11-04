@@ -110,10 +110,11 @@ public class StockDemo
     {
         return manager;
     }
-    
+    //This part of the code prints the product full details.
     public void printProduct(){
         manager.printProductDetails();
     }
+    //Demo 2 initially prints the initial stock after selling a product
     public void demo2(){
         System.out.println("Intial stock");
         manager.printProductDetails();
@@ -123,6 +124,7 @@ public class StockDemo
         manager.printProductDetails();
         
     }
+    //Demo 3 prints initial stock after changing a products name.
     public void demo3(){
         System.out.println("Intial stock");
         manager.printProductDetails();
@@ -131,6 +133,7 @@ public class StockDemo
         System.out.println("After changing iPhone 12 name");
         manager.printProductDetails();
     }
+    //Demo 4 prints the initial stock after removing a products name and details.
     public void demo4(){
         System.out.println("Intial stock");
         manager.printProductDetails();
@@ -139,6 +142,7 @@ public class StockDemo
         System.out.println("After removing iPhone 12");
         manager.printProductDetails();
     }
+    //Demo 5 prints initial stock and helps find the product that has gone missing.
     public void demo5(){
         System.out.println("Intial stock");
         manager.printProductDetails();
