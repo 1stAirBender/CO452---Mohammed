@@ -15,19 +15,21 @@ public class StockManager
     /**
      * Initialise the stock manager.
      */
+    //Creating a new array list for stock manager
     public StockManager()
     {
         stock = new ArrayList<>();
     }
-
     /**
      * Add a product to the list.
      * @param item The item to be added.
      */
+    //Created a code for adding products to the stock
     public void addProduct(Product item)
     {
         stock.add(item);
     }
+    //Created a loop for getting thed id of the product and renaming it when tested
     public void renameProduct(int id,String newName)
     {
         for(Product p:stock) {
@@ -36,9 +38,9 @@ public class StockManager
                 p.rename(newName);
                 break;
             }
-        
         }
     }
+    //Loop for sellling a product
     public void sellProduct(int id)
     {
         for(Product p:stock) {
@@ -47,9 +49,9 @@ public class StockManager
                 p.sellOne();
                 break;
             }
-        
         }
     }
+    //Loop for removing a product
     public void removeProduct(int id)
     {
         for(Product p:stock) {
@@ -58,9 +60,9 @@ public class StockManager
                 stock.remove(p);
                 break;
             }
-        
         }
     }
+    //Loop for finding product and getting its name by its number
     public Product findProduct(String name)
     {
         for(Product p:stock) {
@@ -69,10 +71,10 @@ public class StockManager
                 
                 return p;
             }
-        
         }
         return null;
     }
+    //Loop for increasing the quantity of one product
     /**
      * Receive a delivery of a particular product.
      * Increase the quantity of the product by the given amount.
@@ -87,9 +89,9 @@ public class StockManager
                 p.increaseQuantity(amount);
                 break;
             }
-        
         }
     }
+    //Loop for finding a product
     /**
      * Try to find a product in the stock with the given id.
      * @return The identified product, or null if there is none
@@ -102,10 +104,10 @@ public class StockManager
             {
                 return p;
             }
-        
         }
         return null;
     }
+    //Loop for getting the quantity of a product 
     /**
      * Locate a product with the given ID, and return how
      * many of this item are in stock. If the ID does not
@@ -120,10 +122,11 @@ public class StockManager
             {
                 return p.getQuantity();
             }
-        
         }
         return 0;
     }
+    //Loop for printing the details of all products depending on what you want to do (e.g. 
+    //searching the product)
     /**
      * Print details of all the products.
      */
@@ -131,7 +134,6 @@ public class StockManager
     {
        for(Product p:stock) {
            System.out.println(p.toString() ); 
-        
         } 
     }
 }

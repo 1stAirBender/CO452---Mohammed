@@ -14,6 +14,8 @@ public class Product
     private String name;
     // The quantity of this product in stock.
     private int quantity;
+    
+    //created a string for the id, name and quantity for the product
 
     /**
      * Constructor for objects of class Product.
@@ -27,10 +29,12 @@ public class Product
         this.name = name;
         quantity = 0;
     }
+    //String for finding the product and giving it a new name
     public void rename(String newName)
     {
         this.name=newName;
-    }   
+    }
+    //An int for getting an the ID and returning the product
     /**
      * @return The product's id.
      */
@@ -38,6 +42,7 @@ public class Product
     {
         return id;
     }
+    //A string for returning the product
     /**
      * @return The product's name.
      */
@@ -45,6 +50,7 @@ public class Product
     {
         return name;
     }
+    //this for getting the quantity and then returning it
     /**
      * @return The quantity in stock.
      */
@@ -52,6 +58,7 @@ public class Product
     {
         return quantity;
     }
+    //String for printing the stock level with the details with all 10 products
     /**
      * @return The id, name and quantity in stock.
      */
@@ -59,6 +66,7 @@ public class Product
     {
         return id + ": " +  name + " stock level: " + quantity;
     }
+    //An if statement for the amount and printing out the restock of the products
     /**
      * Restock with the given amount of this product.
      * The current quantity is incremented by the given amount.
@@ -77,6 +85,7 @@ public class Product
                                " with a non-positive amount: " + amount);
         }
     }
+    //if statement for selling a product out of the stock item.
     /**
      * Sell one of these products.
      * An error is reported if there appears to be no stock.
