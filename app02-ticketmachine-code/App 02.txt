@@ -1,0 +1,57 @@
+TicketMachine Aylesbury = new TicketMachine();
+Coin.values()
+    returned Object <object reference>
+TicketMachine TicketMachine = new TicketMachine();
+Ticket Alylesbury = new Ticket();
+Ticket Ammersham = new Ticket();
+Ticket HighWycombe = new Ticket();
+TicketMachine.getBalance()
+    returned int 0
+TicketMachine.getBalance()
+    returned int 0
+TicketMachine.insertCoin(Coin.P200);
+# 200 pence.
+TicketMachine.printTicket(Destination.AYLESBURY);
+You must insert at least: 20 more cents.
+TicketMachine.insertCoin(Coin.P20);
+# 220 pence.
+TicketMachine.printTicket(Destination.AYLESBURY);
+##################
+# The BlueJ Line
+# Ticket to AYLESBURY
+# 220 pence.
+# on Thu Nov 05 19:45:24 GMT 2020
+##################
+
+TicketMachine.getPrice(Destination.AMERSHAM)
+    returned int 300
+TicketMachine.insertCoin(Coin.P200);
+# 200 pence.
+TicketMachine.insertCoin(Coin.P100);
+# 300 pence.
+TicketMachine.printTicket(Destination.AMERSHAM);
+##################
+# The BlueJ Line
+# Ticket to AMERSHAM
+# 300 pence.
+# on Thu Nov 05 19:58:35 GMT 2020
+##################
+
+TicketMachine.getPrice(Destination.HIGHWYCOMBE)
+    returned int 330
+TicketMachine.insertCoin(Coin.P200);
+# 200 pence.
+TicketMachine.insertCoin(Coin.P100);
+# 300 pence.
+TicketMachine.insertCoin(Coin.P20);
+# 320 pence.
+TicketMachine.insertCoin(Coin.P10);
+# 330 pence.
+TicketMachine.printTicket(Destination.HIGHWYCOMBE);
+##################
+# The BlueJ Line
+# Ticket to HIGHWYCOMBE
+# 330 pence.
+# on Thu Nov 05 20:00:03 GMT 2020
+##################
+
