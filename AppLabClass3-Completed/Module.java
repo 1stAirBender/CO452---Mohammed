@@ -11,7 +11,8 @@ public class Module
     private String title;
     private String code;
     private int marks;
-
+    
+    // A public statement for and string for the module title and code
     /**
      * Constructor for objects of class Module
      */
@@ -22,15 +23,17 @@ public class Module
         code = moduleCode;
         marks = 0;
     }
+    // A public statement for the marks given to the student
     public void setMarks(int m)
     {
         marks = m;
     }
+    //A public statement for getting the marks when finishing the module
     public int getMarks()
     {
         return marks;
     }
-
+    // A public statement and print system for the course title, code and marks
     /**
      * An example of a method - replace this comment with your own
      *

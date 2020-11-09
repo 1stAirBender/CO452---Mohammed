@@ -13,7 +13,8 @@
  */
 import java.util.Date;
 import java.text.SimpleDateFormat;
-
+//Added a public class for the ticket machine with the balance and total of
+//tickets when buying
 public class TicketMachine extends Ticket
 {
     
@@ -27,6 +28,7 @@ public class TicketMachine extends Ticket
     /**
      * Create a machine that issues tickets of the given price.
      */
+    //As you can see with the public statement of the balnce and total
     public TicketMachine()
     
     {
@@ -34,7 +36,7 @@ public class TicketMachine extends Ticket
         balance = 0;
         total = 0;
     }
-
+    //Created a public int for getting the price of each 3 destinations
     /**
      * @Return The price of a ticket.
      */
@@ -46,7 +48,7 @@ public class TicketMachine extends Ticket
         if (dest == Destination.HIGHWYCOMBE)price = 330;
         return price;
     }
-
+    //Added a public int for getting the balnace and return balance
     /**
      * Return The amount of money already inserted for the
      * next ticket.
@@ -55,7 +57,8 @@ public class TicketMachine extends Ticket
     {
         return balance;
     }
-
+    //Added a statement to insert a certain amount of money for your ticket
+    //depending on the destination
     /**
      * Receive an amount of money from a customer.
      * Check that the amount is sensible.
@@ -71,12 +74,14 @@ public class TicketMachine extends Ticket
        
         
     }
-
     /**
      * Print a ticket if enough money has been inserted, and
      * reduce the current balance by the ticket price. Print
      * an error message if more money is required.
      */
+    //Added a int statement for getting the price and the new dtae of the
+    //destination and a print stsemnet to print out the details of the ticket
+    //and how much you paid etc.
     public void printTicket(Destination dest)
     {
         int price = getPrice(dest);
@@ -105,7 +110,8 @@ public class TicketMachine extends Ticket
                     
         }
     }
-
+    //Finally i added a public int statement for refunding a ticket with all
+    //its details of the ticket.
     /**
      * Return the money in the balance.
      * The balance is cleared.

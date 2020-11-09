@@ -1,10 +1,10 @@
-
 /**
  * Write a description of class Course here.
  *
  * @author (Mohammed Ahmed - 21915819)
  * @version (22/10/2020)
  */
+//Created a private string for each module that a stdent is taking
 public class Course
 {
     // instance variables - replace the example below with your own
@@ -13,7 +13,8 @@ public class Course
     private Module co452;
     private Module co454;
     private Module co456;
-
+    
+    //A string for the course modules and naming them for m1 to m4
     /**
      * Constructor for objects of class Course
      */
@@ -26,7 +27,8 @@ public class Course
         co454 = m3;
         co456 = m4;
     }
-
+    //A public statement for print the type of modue for the styednt is
+    //attending, plus thier grade and name.
     /**
      * An example of a method - replace this comment with your own
      *
@@ -45,6 +47,8 @@ public class Course
         System.out.println("# grade"+grade());
         
     }
+    // This ia string for printing the students grade for each module
+    //depending on what they get.
     public String grade()
     {
         int total = co450.getMarks() + co452.getMarks() + co454.getMarks() +co456.getMarks();

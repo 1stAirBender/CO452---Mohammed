@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class Course here.
  *
@@ -10,7 +9,7 @@ public class Course
     // instance variables - replace the example below with your own
     private String codeNumber;
     private String title;
-
+    //Created a public string for the code number and the title
     /**
      * Constructor for objects of class Course
      */
@@ -20,25 +19,11 @@ public class Course
         this.title = title;
        
     }
-    
+    //Created a public void that will print out the code number and the course title
     public void print()
     {
         System.out.println("Code number is: " + codeNumber + 
-        " and course tile: " + title);
+        " Software Engineering: " + title);
         
-    }
-    
-  
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public void sampleMethod()
-    {
-        // put your code here
-         
     }
 }

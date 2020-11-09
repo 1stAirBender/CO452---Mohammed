@@ -1,5 +1,4 @@
 import java.util.*;
-
 /**
  * The LabClass class represents an enrolment list for one lab class. It stores
  * the time, room and participants of the lab, as well as the instructor's name.
@@ -9,6 +8,7 @@ import java.util.*;
  * modified by Mohammed Ahmed
  * dated 6/Oct/2020
  */
+//Created a new lab class with the detials of the room, teacher and time and day
 public class LabClass
 {
     private String instructor;
@@ -22,6 +22,7 @@ public class LabClass
      * Create a LabClass with a maximum number of enrolments. All other details
      * are set to default values.
      */
+    //I also added the max number of students in the lab class(which is 3)
     public LabClass(int maxNumberOfStudents)
     {
         instructor = "unknown";
@@ -31,7 +32,8 @@ public class LabClass
         students = new ArrayList<Student>();
         capacity = maxNumberOfStudents;
     }
-
+    //Added if and else statement if the class is full and to add another
+    //student
     /**
      * Add a student to this LabClass.
      */
@@ -46,7 +48,7 @@ public class LabClass
             students.add(newStudent);
         }
     }
-    
+    //This for the number of sudents and the returning number of stuents 
     /**
      * Return the number of students currently enrolled in this LabClass.
      */
@@ -54,7 +56,7 @@ public class LabClass
     {
         return students.size();
     }
-    
+    //A string for the room number that the students will go to
     /**
      * Set the room number for this LabClass.
      */
@@ -62,7 +64,7 @@ public class LabClass
     {
         room = roomNumber;
     }
-    
+    // A string for the time and day for the students to attend
     /**
      * Set the time for this LabClass. The parameter should define the day
      * and the time of day, such as "Friday, 10am".
@@ -71,7 +73,7 @@ public class LabClass
     {
         timeAndDay = timeAndDayString;
     }
-    
+    //A string for the instuctors name
     /**
      * Set the name of the instructor for this LabClass.
      */
@@ -79,15 +81,17 @@ public class LabClass
     {
         instructor = instructorName;
     }
-    
+    //Added a print system for printing out the dtails of the classroom, teacher
+    //and time and day. I also added a for statement to print out the all the
+    //details of the students from when they enroll.
     /**
      * Print out a class list with other LabClass details to the standard
      * terminal.
      */
     public void printList()
     {
-        System.out.println("Lab class " + timeAndDay);
-        System.out.println("Instructor: " + instructor + "   Room: " + room);
+        System.out.println("co452Lab " + timeAndDay);
+        System.out.println("Nick Day: " + instructor + "   G100: " + room);
         System.out.println("Class list:");
         
         for(Student student : students) 
