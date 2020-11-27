@@ -1,0 +1,20 @@
+
+******************************
+ Stock Management Application 
+    App05: by Mohammed Ahmed
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Deliver     Delivers products
+    Search      Searches products
+    Low stock   Low stock in products
+    Re-stock    Re-stock in products
+    Sell        Sell products
+
+> lowstock
+Low stock for products
+Input anything to continue
+> 

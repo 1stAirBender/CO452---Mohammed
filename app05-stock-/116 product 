@@ -1,0 +1,25 @@
+
+******************************
+ Stock Management Application 
+    App05: by Mohammed Ahmed
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Deliver     Delivers products
+    Search      Searches products
+    Low stock   Low stock in products
+    Re-stock    Re-stock in products
+    Sell        Sell products
+
+> printall
+111: Samsung Galaxy S10 stock level: 0
+112: Samsung Galaxy S20 stock level: 0
+113: Apple iPhone 11 stock level: 0
+114: Apple iPhone 12 stock level: 0
+115: Motorola G9 Plus stock level: 0
+116: iMac stock level: 0
+Input anything to continue
+> 

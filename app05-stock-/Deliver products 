@@ -1,0 +1,28 @@
+
+******************************
+ Stock Management Application 
+    App05: by Mohammed Ahmed
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Deliver     Delivers products
+    Search      Searches products
+    Low stock   Low stock in products
+    Re-stock    Re-stock in products
+    Sell        Sell products
+
+> deliver
+Deliver new product
+
+Please enter the product ID
+> 112
+Please enter the amount
+> 8
+
+ You have deliverd 112: Samsung Galaxy S20 stock level: 10
+
+Input anything to continue
+> 
