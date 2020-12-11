@@ -3,8 +3,8 @@
 /**
  * Write a description of class Game here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Mohammed Ahmed)
+ * @version (11/11/2020)
  */
 public class Game
 {
@@ -33,7 +33,6 @@ public class Game
      */
     public void play()
     {
-        // put your code here
         boolean playing = true;
         while(playing){
             room.printRoom();

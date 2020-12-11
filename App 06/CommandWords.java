@@ -2,8 +2,8 @@
 /**
  * Enumeration class CommandWords - write a description of the enum class here
  *
- * @author (your name here)
- * @version (version number or date here)
+ * @author (Mohammed Ahmed)
+ * @version (11/11/2020)
  */
 public enum CommandWords
 {

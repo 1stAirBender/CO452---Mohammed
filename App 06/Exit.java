@@ -2,8 +2,8 @@
 /**
  * Write a description of class Exit here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Mohammed Ahmed)
+ * @version (11/11/2020)
  */
 public class Exit
 {

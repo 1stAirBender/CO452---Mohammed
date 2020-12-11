@@ -2,8 +2,8 @@ import java.util.Scanner;
 /**
  * Write a description of class Parser here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Mohammed Ahmed)
+ * @version (11/11/2020)
  */
 public class Parser
 {

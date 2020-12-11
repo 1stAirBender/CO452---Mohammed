@@ -1,8 +1,8 @@
 /**
  * Write a description of class ConsoleColours here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author ()
+ * @version ()
  */
 public class ConsoleColours
 {
