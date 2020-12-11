@@ -9,7 +9,6 @@ import java.util.Scanner;
  * Modified by: Mohammed Ahmed
  * 20/11/2020
  */
-// Gives access for words and numbers to be inserted in the terminal when started
 public class InputReader
 {
     private Scanner reader;
